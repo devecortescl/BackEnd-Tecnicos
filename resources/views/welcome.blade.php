@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>API REST | TECNICOS V1.0 DOCUMENTACION</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
         <!-- Fonts -->
@@ -37,23 +37,23 @@
                 <div class="col-lg-12">
 
                     <div class="card">
-                        <div class="card-header">Consultas a Clients</div>
+                        <div class="card-header">Consultas al API Clientes</div>
                         <div class="card-body">
 
                             <div class="row">
 
                                 <div class="col-lg-3">
                                     <div class="card ">
-                                        <div class="card-header">Crear Cliente <a href="" class="btn btn-success btn-sm">POST</a></div>
+                                        <div class="card-header">Crear un Registro <a href="" class="btn btn-success btn-sm">POST</a></div>
                                         <div class="card-body">
                                             Se debe enviar un body con: <br>
                                             <code class="card p-2">
                                                 <small>
                                             
-                                            "name": "Esteban", <br>
-                                            "email": "hola@ecortes.cl", <br>
-                                            "phone": "950073523", <br>
-                                            "location": "Av.Providencia 1294, Santiago", 
+                                            "name": "Nombre del Cliente", <br>
+                                            "email": "el Correo Cliente", <br>
+                                            "phone": "formato ( 950073523)", <br>
+                                            "location": "Direccion, Ciudad", 
                                         </small>
                                     </code>
                                         </div>
@@ -64,7 +64,7 @@
 
                                 <div class="col-lg-3">
                                     <div class="card card-hin">
-                                        <div class="card-header">Consultar Cliente <a href="" class="btn btn-primary btn-sm">GET</a></div>
+                                        <div class="card-header">Consultar un Registro <a href="" class="btn btn-primary btn-sm">GET</a></div>
                                         <div class="card-body">
                                             Solo con consultar la URL traera todos los registros  <br>
                                             Si deseas traer especificamente solo debes agregar un /{id}
@@ -76,15 +76,15 @@
 
                                 <div class="col-lg-3">
                                     <div class="card ">
-                                        <div class="card-header">Editar Cliente <a href="" class="btn btn-warning btn-sm">PUT</a></div>
+                                        <div class="card-header">Editar un Registro <a href="" class="btn btn-warning btn-sm">PUT</a></div>
                                         <div class="card-body">
                                             Se debe enviar un body con: <br>
                                             <code class="card p-2">
                                                 <small>
-                                            "name": "Esteban", <br>
-                                            "email": "hola@ecortes.cl", <br>
-                                            "phone": "950073523", <br>
-                                            "location": "Av.Providencia 1294, Santiago", 
+                                                    "name": "Nombre del Cliente", <br>
+                                                    "email": "el Correo Cliente", <br>
+                                                    "phone": "formato ( 950073523)", <br>
+                                                    "location": "Direccion, Ciudad", 
                                         </small>
                                            </code>
                                            
@@ -97,7 +97,7 @@
 
                                 <div class="col-lg-3 ">
                                     <div class="card ">
-                                        <div class="card-header">Crear Cliente <a href="" class="btn btn-danger btn-sm">DELETE</a></div>
+                                        <div class="card-header">Eliminar un Registro <a href="" class="btn btn-danger btn-sm">DELETE</a></div>
                                         <div class="card-body">
                                             Solo debes enviar por la URL la id del cliente a eliminar <br>
                                          
@@ -115,6 +115,267 @@
                     </div>
 
                 </div>
+
+                <hr class="mt-4">
+
+                <div class="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-header">Consultas al API Hardware</div>
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Crear un registro <a href="" class="btn btn-success btn-sm">POST</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "name": "Titular del Servicio", <br>
+                                                    "brand": "Marca del equipo", <br>
+                                                    "model": "Modelo del equipo", <br>
+                                                    "serial": "Numero Serial", <br>
+                                                    "entry": "(formato (aa-mm-dd))",   <br>
+                                                    "egress": "(formato (aa-mm-dd))",   <br> 
+                                                    "status": "(1 = 'abierto'o 2 = Cerrado)", <br>
+                                                    "client_id": (debe estar registrado cliente), <br> 
+                                        </small>
+                                    </code>
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/insertHardware</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card card-hin">
+                                        <div class="card-header">Consultar un registro <a href="" class="btn btn-primary btn-sm">GET</a></div>
+                                        <div class="card-body">
+                                            Solo con consultar la URL traera todos los registros  <br>
+                                            Si deseas traer especificamente solo debes agregar un /{id}
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/showHardware</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Editar un registro  <a href="" class="btn btn-warning btn-sm">PUT</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "name": "Titular del Servicio", <br>
+                                                    "brand": "Marca del equipo", <br>
+                                                    "model": "Modelo del equipo", <br>
+                                                    "serial": "Numero Serial", <br>
+                                                    "entry": "(formato (aa-mm-dd))",   <br>
+                                                    "egress": "(formato (aa-mm-dd))",   <br> 
+                                                    "status": "(1 = 'abierto'o 2 = Cerrado)", <br>
+                                                    "client_id": (debe estar registrado cliente), <br> 
+                                        </small>
+                                           </code>
+                                           
+                                           y en la URL la ID a editar
+                                        </div>
+                                        <div class="card-footer"> <code class="text-sm"><small>http://api.tecnicos.test/v1/updateHardware/{id}</small></code> </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class="card ">
+                                        <div class="card-header">Eliminar un registro  <a href="" class="btn btn-danger btn-sm">DELETE</a></div>
+                                        <div class="card-body">
+                                            Solo debes enviar por la URL la id del cliente a eliminar <br>
+                                         
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/deleteHardware/{id}</small></code></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <hr class="mt-4">
+
+                <div class="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-header">Consultas al API Reportes</div>
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Crear un registro <a href="" class="btn btn-success btn-sm">POST</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "title": "Titular del reporte", <br>
+                                                    "body": "detalle largo en texto", <br>
+                                                    "status": "(1 = 'abierto'o 2 = Cerrado)", <br>
+                                                    "hardware_id": (debe estar registrado el equipo), <br> 
+                                        </small>
+                                    </code>
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/insertReports</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card card-hin">
+                                        <div class="card-header">Consultar un registro <a href="" class="btn btn-primary btn-sm">GET</a></div>
+                                        <div class="card-body">
+                                            Solo con consultar la URL traera todos los registros  <br>
+                                            Si deseas traer especificamente solo debes agregar un /{id}
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/showReports</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Editar un registro  <a href="" class="btn btn-warning btn-sm">PUT</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "title": "Titular del reporte", <br>
+                                                    "body": "detalle largo en texto", <br>
+                                                    "status": "(1 = 'abierto'o 2 = Cerrado)", <br>
+                                                    "hardware_id": (debe estar registrado el equipo), <br>
+                                        </small>
+                                           </code>
+                                           
+                                           y en la URL la ID a editar
+                                        </div>
+                                        <div class="card-footer"> <code class="text-sm"><small>http://api.tecnicos.test/v1/updateReports/{id}</small></code> </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class="card ">
+                                        <div class="card-header">Eliminar un registro  <a href="" class="btn btn-danger btn-sm">DELETE</a></div>
+                                        <div class="card-body">
+                                            Solo debes enviar por la URL la id del cliente a eliminar <br>
+                                         
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/deleteReports/{id}</small></code></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+                <hr class="mt-4">
+
+                <div class="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-header">Consultas al API Usuarios</div>
+                        <div class="card-body">
+
+                            <div class="row">
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Crear un registro <a href="" class="btn btn-success btn-sm">POST</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "name": "nombre del usuario", <br>
+                                                    "email": "correo del usuario", <br>
+                                                    "password": "password minimo 8 digitos ", <br>
+                                                    "password_confirmation": se deber repetir la contraseña, <br> 
+                                        </small>
+                                    </code>
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/insertUsers</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card card-hin">
+                                        <div class="card-header">Consultar un registro <a href="" class="btn btn-primary btn-sm">GET</a></div>
+                                        <div class="card-body">
+                                            Solo con consultar la URL traera todos los registros  <br>
+                                            Si deseas traer especificamente solo debes agregar un /{id}
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/showUsers</small></code></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <div class="card ">
+                                        <div class="card-header">Editar un registro  <a href="" class="btn btn-warning btn-sm">PUT</a></div>
+                                        <div class="card-body">
+                                            Se debe enviar un body con: <br>
+                                            <code class="card p-2">
+                                                <small>
+                                                    "name": "nombre del usuario", <br>
+                                                    "email": "correo del usuario", <br>
+                                                    "password": "password minimo 8 digitos ", <br>
+                                                    "password_confirmation": se deber repetir la contraseña, <br> 
+                                        </small>
+                                           </code>
+                                           
+                                           y en la URL la ID a editar
+                                        </div>
+                                        <div class="card-footer"> <code class="text-sm"><small>http://api.tecnicos.test/v1/updateUsers/{id}</small></code> </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3 ">
+                                    <div class="card ">
+                                        <div class="card-header">Eliminar un registro  <a href="" class="btn btn-danger btn-sm">DELETE</a></div>
+                                        <div class="card-body">
+                                            Solo debes enviar por la URL la id del cliente a eliminar <br>
+                                         
+                                        </div>
+                                        <div class="card-footer"><code class="text-sm"><small> http://api.tecnicos.test/v1/deleteUsers/{id}</small></code></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
 
             </div>
 
