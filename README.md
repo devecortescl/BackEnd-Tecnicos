@@ -9,7 +9,7 @@
 
 ## Caso de Estudio BACKEND (LARAVEL)
 
-Creacion de un backend con LARAVEL + Mysql (Version 1.0)
+Creación de un backend con LARAVEL + Mysql (Version 1.0)
 
 Incluye:
 - User
@@ -50,10 +50,18 @@ REPORTS RUTAS
 - GET  http://api.tecnicos.test/v1/updateReports/{id}
 - PUT  http://api.tecnicos.test/v1/deleteReports/{id}
 
-## Documentacion
+## Documentacion + Instalación
 
 Enlace de la documentacion del api http://api.tecnicos.test/
 
-## License
+Pasos a seguir:
+- Clone repositorio
+- tener disponible xampp o wampp con apache 
+- Crear base de datos y ajustar el archivo ENV.EXAMPLE
+- install composer de ser necesario
+- php artisan migrate (para crear base de datos)
+- listo para funcionar.
+
+## licencias
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
