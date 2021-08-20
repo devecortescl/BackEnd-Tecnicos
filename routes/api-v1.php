@@ -20,11 +20,14 @@ use App\Http\Controllers\Api\UserController;
 */
 
 // rutas api clientes
+
 Route::post('insertClients', [ClientController::class, 'insert'])->name('v1.clients.store');
 Route::get('showClients', [ClientController::class, 'index'])->name('v1.clients.index');
 Route::get('showClients/{id}', [ClientController::class, 'show'])->name('v1.clients.show');
 Route::put('updateClients/{id}', [ClientController::class, 'update'])->name('v1.clients.update');
 Route::delete('deleteClients/{id}', [ClientController::class, 'delete'])->name('v1.clients.delete');
+
+
 
 // rutas api hardware
 Route::post('insertHardware', [HardwareController::class, 'insert'])->name('v1.hardware.store');
@@ -39,6 +42,9 @@ Route::get('showReports', [ReportController::class, 'index'])->name('v1.reports.
 Route::get('showReports/{id}', [ReportController::class, 'show'])->name('v1.reports.show');
 Route::put('updateReports/{id}', [ReportController::class, 'update'])->name('v1.reports.update');
 Route::delete('deleteReports/{id}', [ReportController::class, 'delete'])->name('v1.reports.delete');
+
+
+
 
 // rutas api users
 Route::post('insertUsers', [UserController::class, 'insert'])->name('v1.users.store');
