@@ -52,7 +52,7 @@ REPORTS RUTAS
 
 ## Documentacion + Instalación
 
-Enlace de la documentacion del api https://www.postman.com/red-comet-442788/workspace/api-tecnicos-v1/overview POSTMAN
+Enlace de la documentacion del api https://www.postman.com/teamecortespa/workspace/api-tecnicos-v1/ POSTMAN
 
 Pasos a seguir:
 - Clone repositorio
