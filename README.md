@@ -22,37 +22,37 @@ Incluye:
 
 USER RUTAS
 
-- POST http://api.tecnicos.test/v1/insertUsers
-- GET  http://api.tecnicos.test/v1/showUsers
-- GET  http://api.tecnicos.test/v1/updateUsers/{id}
-- PUT  http://api.tecnicos.test/v1/deleteUsers/{id}
+- POST https://tudominio.com/v1/insertUsers
+- GET  https://tudominio.com/v1/showUsers
+- PUT  https://tudominio.com/v1/updateUsers/{id}
+- DELETE https://tudominio.com/v1/deleteUsers/{id}
 
 
 CLIENTS RUTAS
 
-- POST http://api.tecnicos.test/v1/insertClients
-- GET  http://api.tecnicos.test/v1/showClients
-- GET  http://api.tecnicos.test/v1/updateClients/{id}
-- PUT  http://api.tecnicos.test/v1/deleteClients/{id}
+- POST https://tudominio.com/v1/insertClients
+- GET  https://tudominio.com/v1/showClients
+- PUT  https://tudominio.com/v1/updateClients/{id}
+- DELETE  https://tudominio.com/v1/deleteClients/{id}
 
 
 HARDWARE RUTAS
 
-- POST http://api.tecnicos.test/v1/insertHardware
-- GET  http://api.tecnicos.test/v1/showHardware
-- GET  http://api.tecnicos.test/v1/updateHardware/{id}
-- PUT  http://api.tecnicos.test/v1/deleteHardware/{id}
+- POST https://tudominio.com/v1/insertHardware
+- GET  https://tudominio.com/v1/showHardware
+- PUT  https://tudominio.com/v1/updateHardware/{id}
+- DELETE  https://tudominio.com/v1/deleteHardware/{id}
 
 REPORTS RUTAS
 
-- POST http://api.tecnicos.test/v1/insertReports
-- GET  http://api.tecnicos.test/v1/showReports
-- GET  http://api.tecnicos.test/v1/updateReports/{id}
-- PUT  http://api.tecnicos.test/v1/deleteReports/{id}
+- POST https://tudominio.com/v1/insertReports
+- GET  https://tudominio.com/v1/showReports
+- PUT  https://tudominio.com/v1/updateReports/{id}
+- DELETE  https://tudominio.com/v1/deleteReports/{id}
 
 ## Documentacion + Instalación
 
-Enlace de la documentacion del api http://api.tecnicos.test/
+Enlace de la documentacion del api https://www.postman.com/red-comet-442788/workspace/api-tecnicos-v1/overview POSTMAN
 
 Pasos a seguir:
 - Clone repositorio
