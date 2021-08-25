@@ -52,3 +52,18 @@ Route::get('showUsers', [UserController::class, 'index'])->name('v1.users.index'
 Route::get('showUsers/{id}', [UserController::class, 'show'])->name('v1.users.show');
 Route::put('updateUsers/{id}', [UserController::class, 'update'])->name('v1.users.update');
 Route::delete('deleteUsers/{id}', [UserController::class, 'delete'])->name('v1.users.delete');
+
+Route::group([
+
+    'middleware' => 'api',
+    'prefix' => 'auth'
+
+], function ($router) {
+
+    Route::post('login', 'App\Http\Controllers\AuthController@login');
+    Route::post('logout', 'App\Http\Controllers\AuthController@logout');
+    Route::post('refresh', 'App\Http\Controllers\AuthController@refresh');
+    Route::post('me', 'App\Http\Controllers\AuthController@me');
+    Route::post('register', 'App\Http\Controllers\AuthController@register');
+
+});

@@ -27,6 +27,13 @@ USER RUTAS
 - PUT  https://tudominio.com/v1/updateUsers/{id}
 - DELETE https://tudominio.com/v1/deleteUsers/{id}
 
+AUTH RUTAS
+- POST https://tudominio.com/v1/auth/login
+- POST https://tudominio.com/v1/auth/register
+- POST https://tudominio.com/v1/auth/logout
+- POST https://tudominio.com/v1/auth/refresh
+- POST https://tudominio.com/v1/auth/me
+
 
 CLIENTS RUTAS
 
@@ -56,11 +63,13 @@ Enlace de la documentacion del api https://www.postman.com/teamecortespa/workspa
 
 Pasos a seguir:
 - Clone repositorio
-- tener disponible xampp o wampp con apache 
-- Crear base de datos y ajustar el archivo ENV.EXAMPLE
-- install composer de ser necesario
-- php artisan migrate (para crear base de datos)
-- listo para funcionar.
+- Tener disponible xampp o wampp con apache 
+- Crear base de datos y ajustar el archivo .ENV
+- Generar Key JWT php artisan jwt:secret
+- Añadir JWT_SECRET=CLAVE al .ENV
+- Install composer de ser necesario
+- PHP artisan migrate (para crear base de datos)
+- Listo para funcionar.
 
 ## licencias
 
