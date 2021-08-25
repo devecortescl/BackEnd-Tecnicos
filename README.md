@@ -30,6 +30,8 @@ USER RUTAS
 AUTH RUTAS
 - POST https://tudominio.com/v1/auth/login
 - POST https://tudominio.com/v1/auth/register
+
+AÑADIR AL HEADER token=CODIGO JWT
 - POST https://tudominio.com/v1/auth/logout
 - POST https://tudominio.com/v1/auth/refresh
 - POST https://tudominio.com/v1/auth/me
